@@ -38,10 +38,10 @@ turnDegrees(90);
       }
     }
 
-    public void driveLeft(double distance) throws InterruptedException {
+    public void driveLeft() throws InterruptedException {
  turnDegrees(-90);
-      driveDistance(-distance);
-      verticalPosition = -distance + verticalPosition;
+      driveDistance(-4);
+      verticalPosition = -4 + verticalPosition;
       direction = -90 + direction;
       if (direction <= -360) {
         direction = direction + 360;
